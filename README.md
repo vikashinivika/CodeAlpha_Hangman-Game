@@ -38,10 +38,10 @@ while wrong_guesses < max_wrong_guesses and '_' in display_word:
                 display_word[i] = guess
     else:
         wrong_guesses += 1
-        print(f"❌ Incorrect! You have {max_wrong_guesses - wrong_guesses} tries left.")
+        print(f"❌l Incorrect! You have {max_wrong_guesses - wrong_guesses} tries left.")
 
 # Game over
 if '_' not in display_word:
-    print(f"\n🎉 Congratulations! You guessed the word: {secret_word}")
+    print(f"\n Congratulations! You guessed the word: {secret_word}")
 else:
-    print(f"\n💀 Game Over! The word was: {secret_word}")
+    print(f"\n Game Over! The word was: {secret_word}")
